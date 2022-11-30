@@ -17,3 +17,7 @@ SELECT * FROM users WHERE id BETWEEN 2 AND 4;
 SELECT * FROM users WHERE username LIKE 'user%';
 
 SELECT * FROM category ORDER BY name ASC LIMIT 3 OFFSET 1;
+
+SELECT movie_id FROM category_list WHERE category_id NOT IN (1, 2, 3);
+
+SELECT title FROM news WHERE movie_id IS NOT NULL;
