@@ -93,3 +93,5 @@ CREATE TABLE logs (
 	user_id INT NOT NULL,
 	CONSTRAINT fk_user_logs FOREIGN KEY (user_id) REFERENCES users(id)
 );
+
+ALTER TABLE users ADD UNIQUE (email);
